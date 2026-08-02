@@ -7,8 +7,8 @@ Operator. Application source is maintained separately in a private repository.
 
 Open **Releases** and download the versioned Windows launcher named:
 
-`OCI-Policy-Operator-vX.Y.Z.exe` for Windows, or
-`OCI-Policy-Operator-vX.Y.Z-macOS.tar.gz` for macOS. The single macOS launcher
+`OCI-Policy-Operator-Launcher-vX.Y.Z.exe` for Windows, or
+`OCI-Policy-Operator-Launcher-vX.Y.Z-macOS.tar.gz` for macOS. The single macOS launcher
 supports both Intel and Apple Silicon.
 
 The files named `OCI-Policy-Operator-App-*`, `release.json`, and
