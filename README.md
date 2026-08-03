@@ -5,21 +5,30 @@ Operator. Application source is maintained separately in a private repository.
 
 ## Download
 
-Open **Releases** and download the versioned Windows launcher named:
+Open **Releases** and download only the entry point for your operating system:
 
-`OCI-Policy-Operator-Launcher-vX.Y.Z.exe` for Windows, or
-`OCI-Policy-Operator-Launcher-vX.Y.Z-macOS.tar.gz` for macOS. The single macOS launcher
-supports both Intel and Apple Silicon.
+- Windows: `OCI-Policy-Operator-Launcher-vX.Y.Z.exe`
+- macOS: `Install-OCI-Policy-Operator-macOS.command`
 
-The files named `OCI-Policy-Operator-App-*`, `release.json`, and
-`release.json.sig` are verified automatic-update payloads used by the launcher.
+On macOS, run the downloaded installer from Terminal:
+
+```sh
+sh ~/Downloads/Install-OCI-Policy-Operator-macOS.command
+```
+
+The other release assets—including `OCI-Policy-Operator-App-*`, the Python
+wheel, and the JSON/signature pairs—are verified installation and update
+payloads used by the Windows launcher or macOS installer. Users do not launch
+those files directly.
 
 ## Update security
 
-The launcher embeds an Ed25519 public key and accepts only a matching signed
-manifest. It verifies the package SHA-256, permits downloads only from GitHub
-HTTPS hosts, rejects unsafe archive paths and links, and retains the last
-verified installed version when an update cannot be verified.
+The Windows launcher and macOS installer embed an Ed25519 public key and accept
+only matching signed manifests. They verify package SHA-256 digests and permit
+downloads only from approved GitHub HTTPS hosts. The Windows launcher also
+rejects unsafe archive paths and retains the last verified installed version
+when an update cannot be verified. The macOS installer creates the runnable app
+locally, avoiding distribution of an unnotarized application bundle.
 
 OCI configuration, session tokens, signing keys, source code, logs, and local
 runtime data are not published in this repository.
