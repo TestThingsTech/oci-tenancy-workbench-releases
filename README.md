@@ -1,22 +1,22 @@
-# OCI Policy Operator releases
+# OCI Tenancy Workbench releases
 
-This public repository contains signed, binary-only releases of OCI Policy
-Operator. Application source is maintained separately in a private repository.
+This public repository contains signed, binary-only releases of OCI Tenancy
+Workbench. Application source is maintained separately in a private repository.
 
 ## Download
 
 Open **Releases** and download only the entry point for your operating system:
 
-- Windows: `OCI-Policy-Operator-Launcher-vX.Y.Z.exe`
-- macOS: `Install-OCI-Policy-Operator-macOS.command`
+- Windows: `OCI-Tenancy-Workbench-Launcher.exe`
+- macOS: `Install-OCI-Tenancy-Workbench-macOS.command`
 
 On macOS, run the downloaded installer from Terminal:
 
 ```sh
-sh ~/Downloads/Install-OCI-Policy-Operator-macOS.command
+sh ~/Downloads/Install-OCI-Tenancy-Workbench-macOS.command
 ```
 
-The other release assets—including `OCI-Policy-Operator-App-*`, the Python
+The other release assets—including `OCI-Tenancy-Workbench-App-*`, the Python
 wheel, and the JSON/signature pairs—are verified installation and update
 payloads used by the Windows launcher or macOS installer. Users do not launch
 those files directly.
