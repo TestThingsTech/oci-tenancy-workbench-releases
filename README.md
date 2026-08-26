@@ -142,7 +142,3 @@ contains:
 The stable Windows launcher and generated macOS app check the verified release
 channel at startup. If an update cannot be downloaded or verified, the last
 verified installed version remains available.
-
-> OCI Tenancy Workbench is an independent utility and is not an Oracle product.
-> Users remain responsible for reviewing OCI policies, credentials, tenancy
-> resources, compliance findings, and confirmed changes.
