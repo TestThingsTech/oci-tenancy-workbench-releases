@@ -2,6 +2,15 @@
 
 **Explore your Tenancy.**
 
+## Disclaimer
+
+This project is an independent community tool published by **TestThingsTech**.
+It is **not** an Oracle product, and it is not affiliated with, endorsed by, or
+supported by Oracle. It is provided as-is without warranty.
+
+The same disclaimer applies to other tools published by **TestThingsTech**.
+Validate this tool in your own environment before production use.
+
 OCI Tenancy Workbench is a local Windows and macOS utility for understanding
 Oracle Cloud Infrastructure access, reviewing IAM policy configuration,
 checking operational coverage, and building least-privilege policy changes.
